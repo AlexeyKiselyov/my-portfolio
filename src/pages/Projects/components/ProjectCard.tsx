@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             {project.tech.map(tech => (
               <img
                 key={tech}
-                src={`/public/icons/techs/filled/${tech}.svg`}
+                src={`/icons/techs/filled/${tech}.svg`}
                 title={tech}
                 alt={tech}
                 className="w-6 h-6 mx-1 hover:opacity-75"
@@ -68,7 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               rel="noopener noreferrer"
               className="button-main text-xs"
             >
-              <img src="/public/icons/social/github.svg" alt="GitHub" />
+              <img src="/icons/social/github.svg" alt="GitHub" />
             </a>
           </div>
         </div>

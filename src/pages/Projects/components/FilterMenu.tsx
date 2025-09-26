@@ -89,7 +89,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                       })}
                     />
                     <img
-                      src={`/public/icons/techs/${tech}.svg`}
+                      src={`/icons/techs/${tech}.svg`}
                       alt=""
                       className={clsx(styles.techIcon, 'w-5 h-5 mx-4', {
                         [styles.techIconActive]: checked,

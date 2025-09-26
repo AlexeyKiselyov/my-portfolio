@@ -28,7 +28,7 @@ const AppHeader: React.FC = () => {
           <NavLink id="nav-logo" className={styles.navLogo} to="/">
             <img
               className="rounded-[50%] mr-3 w-8"
-              src="/public/images/avatar/avatar_logo.jpg"
+              src="/images/avatar/avatar_logo.jpg"
               alt="avatar"
               width="24px"
             />
