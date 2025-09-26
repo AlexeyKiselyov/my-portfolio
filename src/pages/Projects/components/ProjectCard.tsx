@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './ProjectCard.module.css';
 import clsx from 'clsx';
 
+import { TECH_ICON_FILES } from '../../../constants';
+
 interface ProjectCardProps {
   project: {
     title: string;
@@ -29,15 +31,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       <div className={clsx(styles.projectCard, 'flex flex-col flex-1')}>
         <div className={clsx(styles.window)}>
           <div className="absolute flex right-3 top-3">
-            {project.tech.map(tech => (
-              <img
-                key={tech}
-                src={`/icons/techs/filled/${tech}.svg`}
-                title={tech}
-                alt={tech}
-                className="w-6 h-6 mx-1 hover:opacity-75"
-              />
-            ))}
+            {project.tech.map(tech => {
+              const file = TECH_ICON_FILES[tech] || `${tech.toLowerCase()}.svg`;
+              return (
+                <img
+                  key={tech}
+                  src={`/icons/techs/filled/${file}`}
+                  title={tech}
+                  alt={tech}
+                  className="w-6 h-6 mx-1 hover:opacity-75"
+                  onError={e => {
+                    (e.currentTarget as HTMLImageElement).style.display =
+                      'none';
+                  }}
+                />
+              );
+            })}
           </div>
           <img
             className={clsx(styles.showcase)}

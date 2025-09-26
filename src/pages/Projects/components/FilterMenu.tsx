@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 import styles from '../Projects.module.css';
 
-import { TECHS } from '../../../constants';
+import { TECHS, TECH_ICON_FILES } from '../../../constants';
 
 interface FilterMenuProps {
   filters: string[];
@@ -89,11 +89,17 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                       })}
                     />
                     <img
-                      src={`/icons/techs/${tech}.svg`}
-                      alt=""
+                      src={`/icons/techs/${
+                        TECH_ICON_FILES[tech] || tech.toLowerCase() + '.svg'
+                      }`}
+                      alt={tech}
                       className={clsx(styles.techIcon, 'w-5 h-5 mx-4', {
                         [styles.techIconActive]: checked,
                       })}
+                      onError={e => {
+                        (e.currentTarget as HTMLImageElement).style.visibility =
+                          'hidden';
+                      }}
                     />
                     <label
                       htmlFor={tech}
