@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import clsx from 'clsx';
 
 import { monthsDiff } from '../../../utils';
@@ -18,10 +16,51 @@ interface GistSnippetProps {
 const GistSnippet: React.FC<GistSnippetProps> = ({ snippet }) => {
   const [animation, setAnimation] = useState(false);
   const [showComment, setShowComment] = useState(false);
+  const [SyntaxHighlighter, setSyntaxHighlighter] = useState<any>(null);
+  const [codeStyle, setCodeStyle] = useState<any>(null);
 
   useEffect(() => {
     setAnimation(true);
   }, [snippet]);
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        const [prismLightMod, styleMod] = await Promise.all([
+          import('react-syntax-highlighter/dist/esm/prism-light'),
+          import('react-syntax-highlighter/dist/esm/styles/prism'),
+        ]);
+
+        const [tsMod, jsMod] = await Promise.all([
+          import(
+            'react-syntax-highlighter/dist/esm/languages/prism/typescript'
+          ),
+          import(
+            'react-syntax-highlighter/dist/esm/languages/prism/javascript'
+          ),
+        ]);
+
+        if (!mounted) return;
+        prismLightMod.default.registerLanguage(
+          'typescript',
+          (tsMod as any).default
+        );
+        prismLightMod.default.registerLanguage(
+          'javascript',
+          (jsMod as any).default
+        );
+
+        setSyntaxHighlighter(() => prismLightMod.default);
+        setCodeStyle(styleMod.vscDarkPlus);
+      } catch (e) {
+        console.error('Failed to load light prism bundle', e);
+      }
+    })();
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   const toggleComment = () => setShowComment(v => !v);
 
@@ -81,28 +120,49 @@ const GistSnippet: React.FC<GistSnippetProps> = ({ snippet }) => {
           )}
           style={{ maxHeight: 240 }}
         >
-          <SyntaxHighlighter
-            language={snippet.language || 'typescript'}
-            style={vscDarkPlus}
-            showLineNumbers={false}
-            wrapLines={true}
-            customStyle={{
-              background: 'transparent',
-              padding: '1rem',
-              margin: 0,
-              fontSize: '12px',
-              fontFamily: 'Fira Code, Monaco, Consolas, monospace',
-            }}
-            codeTagProps={{
-              style: {
-                whiteSpace: 'pre-wrap',
-                width: 'max-content',
-                fontFamily: 'inherit',
-              },
-            }}
-          >
-            {snippet.code || ''}
-          </SyntaxHighlighter>
+          {SyntaxHighlighter && codeStyle ? (
+            <SyntaxHighlighter
+              language={
+                ['javascript', 'js'].includes(
+                  (snippet.language || '').toLowerCase()
+                )
+                  ? 'javascript'
+                  : 'typescript'
+              }
+              style={codeStyle}
+              showLineNumbers={false}
+              wrapLines={true}
+              customStyle={{
+                background: 'transparent',
+                padding: '1rem',
+                margin: 0,
+                fontSize: '12px',
+                fontFamily: 'Fira Code, Monaco, Consolas, monospace',
+              }}
+              codeTagProps={{
+                style: {
+                  whiteSpace: 'pre-wrap',
+                  width: 'max-content',
+                  fontFamily: 'inherit',
+                },
+              }}
+            >
+              {snippet.code || ''}
+            </SyntaxHighlighter>
+          ) : (
+            <pre
+              style={{
+                background: 'transparent',
+                padding: '1rem',
+                margin: 0,
+                fontSize: '12px',
+                fontFamily: 'Fira Code, Monaco, Consolas, monospace',
+                opacity: 0.6,
+              }}
+            >
+              {snippet.code || ''}
+            </pre>
+          )}
         </SimpleBar>
       </div>
 
