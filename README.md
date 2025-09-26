@@ -41,8 +41,8 @@ terminal design with dark theme, smooth animations, and responsive interface.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/AlexeyKiselyov/strawberry.git
-   cd portfolio-react
+   git clone https://github.com/AlexeyKiselyov/my-portfolio.git
+   cd my-portfolio
    ```
 
 2. Install dependencies:
@@ -113,7 +113,7 @@ migrated to React by me. Many improvements were made, problematic areas were
 fixed, and the codebase was optimized for better performance and
 maintainability.
 
-- Designer: [@darelova](https://github.com/darelova)
+- Designer: [@darelova](https://www.behance.net/darelova)
 - Developer: [@alexdeploy](https://github.com/alexdeploy)
 - Original Repository:
   [link](https://github.com/alexdeploy/developer-portfolio-v2)
