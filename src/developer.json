@@ -131,7 +131,7 @@
       "createdAt": "2024-08-02T08:30:00.000Z",
       "author": {
         "login": "AlexeyKiselyov",
-  "avatarUrl": "/images/avatar/avatar_logo.jpg",
+        "avatarUrl": "/images/avatar/avatar_logo.jpg",
         "profileUrl": "https://github.com/AlexeyKiselyov"
       },
       "description": "Tiny, reusable hook I use across apps."
@@ -143,7 +143,7 @@
       "createdAt": "2023-04-19T10:00:00.000Z",
       "author": {
         "login": "AlexeyKiselyov",
-  "avatarUrl": "/images/avatar/avatar_logo.jpg",
+        "avatarUrl": "/images/avatar/avatar_logo.jpg",
         "profileUrl": "https://github.com/AlexeyKiselyov"
       },
       "description": "Express handler for a file-backed URL shortener with basic validation."
@@ -155,7 +155,7 @@
       "createdAt": "2023-02-19T10:20:00.000Z",
       "author": {
         "login": "AlexeyKiselyov",
-  "avatarUrl": "/images/avatar/avatar_logo.jpg",
+        "avatarUrl": "/images/avatar/avatar_logo.jpg",
         "profileUrl": "https://github.com/AlexeyKiselyov"
       },
       "description": "Axios POST helper: toggles loading, handles success/error, clears cart and resets form."
