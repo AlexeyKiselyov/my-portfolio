@@ -167,8 +167,8 @@
       "description": "A portfolio website that contains information about me.",
       "img": "/images/projects/portfolio.png",
       "tech": ["React", "TypeScript", "Tailwindcss"],
-      "url": "https://github.com/AlexeyKiselyov",
-      "github_link": "https://github.com/AlexeyKiselyov"
+      "url": "https://oleksii-kyselov.dev",
+      "github_link": "https://github.com/AlexeyKiselyov/my-portfolio"
     },
     {
       "title": "_food-shop",
