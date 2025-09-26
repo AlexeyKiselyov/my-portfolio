@@ -1,0 +1,238 @@
+{
+  "name": "Oleksii Kyselov",
+  "logo_name": "Oleksii Kyselov",
+  "role": "Full-stack developer",
+  "about": {
+    "sections": {
+      "professional-info": {
+        "title": "professional-info",
+        "icon": "icons/info-professional.svg",
+        "info": {
+          "experience": {
+            "title": "experience",
+            "description": "<br>3+ years in software development and 2+ years of commercial experience. I build responsive, accessible, and performant web apps and seek a full‑time role to contribute and grow.<br><br>· Frontend Web Developer — NDA<br>Feb 2024 – Mar 2025 · Ukraine<br>- Landing pages with HTML, CSS, JavaScript; interactive elements, animations, and sliders (custom and library‑based).<br>- Adaptive/responsive layouts; cross‑browser compatibility; code quality and performance optimization.<br><br>· Freelance Web Developer<br>Feb 2023 – Feb 2024 · Ukraine<br>- Creating landing pages and small web apps.<br>- MERN stack development (React/Node.js/MongoDB).<br>- WordPress e‑commerce setup and hosting.<br>- Telegram bots and automation.<br><br>· Engineer — Ukrainian Railways<br>Aug 2009 – Feb 2024 · Ukraine<br>- Installed, configured, and maintained digital communication systems and fiber‑optic lines.<br>- High‑/low‑frequency measurement workflows and systems maintenance.<br><br>· Company Owner — L&V Company<br>Oct 2009 – Feb 2015 · Ukraine<br>- Retail operations management; sales and installation of metal‑plastic structures.",
+            "files": {
+              "CV": "<br> [View and download my CV](https://drive.google.com/file/d/1SP5gEv0SM00heaqfXZbsclLLYxlL8wkH/view?usp=drive_link)"
+            }
+          },
+          "hard-skills": {
+            "title": "hard-skills",
+            "description": "<br>· Core stack: <br>HTML, CSS, SASS, JavaScript, TypeScript, React, Redux, Node.js, MongoDB, SQL, Git, REST API, AWS, Linux, Docker, Jenkins.<br><br>· Front‑end: <br>Responsive/adaptive layouts, accessibility basics, cross‑browser compatibility, animations and sliders (custom and library‑based), performance profiling and optimization.<br><br>· Back‑end: <br>Node.js/Express, RESTful APIs, MongoDB (Mongoose), basic SQL.<br><br>· Tooling & DevOps: <br>Git and CI/CD, Docker, basics of AWS, Linux CLI, WordPress deployments, hosting/monitoring.<br><br>· Other: <br>MERN applications, Telegram bot integrations, e‑commerce setups on WordPress."
+          },
+          "soft-skills": {
+            "title": "soft-skills",
+            "description": "<br>Responsible, quick‑learning, goal‑oriented. <br><br>Clear communication, teamwork, and ownership mindset. <br><br>Strong problem‑solving skills, attention to detail, and the ability to deliver under deadlines."
+          },
+          "languages": {
+            "title": "languages",
+            "description": "<br>English  — Intermediate<br><br>Ukrainian — Native<br><br>Russian — Native"
+          }
+        }
+      },
+      "personal-info": {
+        "title": "personal-info",
+        "icon": "icons/info-personal.svg",
+        "info": {
+          "bio": {
+            "title": "bio",
+            "description": "<br>About me<br><br>I’m a front‑end developer with a full‑stack mindset, 3+ years in software development and 2+ years of commercial work. I care about clean, maintainable UIs and measurable UX/performance gains, and I’m looking for a full‑time role to make an impact.<br><br>My engineering background at Ukrainian Railways strengthened discipline, system thinking, and reliability in production environments."
+          },
+          "interests": {
+            "title": "interests",
+            "description": "<br>· Continuous learning; <br>· Modern front‑end architectures; <br>· UI animations and micro‑interactions; <br>· Performance tuning; <br>· Automation and scripting; <br>· DevOps basics (Docker/AWS); <br>· MERN side projects; <br>· Telegram bots; <br>· Artificial Intelligence."
+          },
+          "education": {
+            "title": "education",
+            "description": "<br>· IT School GOIT (Kyiv)<br>Jun 2022 – Jan 2023 · Ukraine <br>Full‑Stack Developer <br> [Certificate](https://drive.google.com/file/d/1kpcInKoDLQ6ox-bz_14-KcMMVbrac6Mt/view) <br><br>· Kharkov Academy of Railway Transport<br>Sep 2005 – Jun 2009 · Ukraine <br>Master’s in Automation and Computer‑Integrated Technologies",
+            "files": {
+              "additional": "<br>· IT School GOIT (Kyiv)<br>Jun 2022 – Jan 2023 · Ukraine <br>Full‑Stack Developer — [Certificate](https://drive.google.com/file/d/1kpcInKoDLQ6ox-bz_14-KcMMVbrac6Mt/view)<br><br>· FREECODECAMP <br>JavaScript Algorithms and Data Structures — [Certificate](https://drive.google.com/file/d/1m-gFALdXKFECQZEGQkYmIRLrpCtYZ_G3/view?usp=drive_link)<br><br>· CODEFINITY<br>Introduction to SQL — [Certificate](https://codefinity.com/ua/certificate/e940029e-46e3-4261-b0eb-afb293628be8/b3ddb247-eebc-4cd4-a859-0d9c1428d0bf)<br>Intermediate SQL — [Certificate](https://codefinity.com/ua/certificate/e940029e-46e3-4261-b0eb-afb293628be8/9f551543-b1bb-4307-afcd-0d82f5165ff4) <br><br>· CODEWARS — [Profile](https://www.codewars.com/users/AlexeyKiselyov)",
+              "university": "<br>· Kharkov Academy of Railway Transport<br>Sep 2005 – Jun 2009 · Ukraine <br>Master’s in Automation and Computer‑Integrated Technologies"
+            }
+          }
+        }
+      },
+      "hobbies-info": {
+        "title": "hobbies-info",
+        "icon": "icons/info-hobbies.svg",
+        "info": {
+          "sports": {
+            "title": "sports",
+            "description": "<br>Outside of coding, I enjoy staying active and keeping a healthy lifestyle. I like working out both at outdoor sports grounds and in the gym, where I can challenge myself and build discipline. Cycling is another passion of mine, as it allows me to combine physical activity with exploring new places. I also enjoy taking walks, which helps me recharge and find inspiration for my projects."
+          },
+          "music": {
+            "title": "music",
+            "description": "<br>Music has always been an important part of my life. I enjoy playing both the guitar and the piano, which allows me to express creativity in different ways. I also love listening to beautiful and interesting music, as it inspires me, helps me relax, and often sparks new ideas for my work."
+          }
+        }
+      }
+    }
+  },
+  "contacts": {
+    "direct": {
+      "title": "contacts",
+      "sources": {
+        "email": "aleshakiselev123@gmail.com",
+        "phone": "+380995049419"
+      }
+    },
+    "social": {
+      "github": {
+        "title": "Github profile",
+        "url": "https://github.com/",
+        "user": "AlexeyKiselyov"
+      },
+      "telegram": {
+        "title": "Telegram profile",
+        "url": "https://t.me/",
+        "user": "MusicMan6666"
+      },
+      "linkedin": {
+        "title": "Linkedin account",
+        "url": "https://www.linkedin.com/in/",
+        "user": "olexii-kyselov"
+      }
+    },
+    "find_me_also_in": {
+      "title": "find-me-also-in",
+      "sources": {
+        "linkedin": {
+          "title": "Linkedin account",
+          "url": "https://www.linkedin.com/in/",
+          "user": "olexii-kyselov"
+        },
+        "github": {
+          "title": "Github profile",
+          "url": "https://github.com/",
+          "user": "AlexeyKiselyov"
+        },
+        "facebook": {
+          "title": "Facebook profile",
+          "url": "https://www.facebook.com/",
+          "user": "profile.php?id=100001969524939"
+        },
+        "instagram": {
+          "title": "Instagram profile",
+          "url": "https://www.instagram.com/",
+          "user": "aleshakiselev1986"
+        },
+        "telegram": {
+          "title": "Telegram channel",
+          "url": "https://t.me/",
+          "user": "MusicMan6666"
+        }
+      }
+    }
+  },
+  "snippets": {
+    "use-debounce-hook": {
+      "title": "useDebounce Hook",
+      "language": "typescript",
+      "code": "import { useEffect, useState } from 'react';\n\n// useDebounce Hook\nexport function useDebounce<T>(value: T, delay = 300) {\n  const [debounced, setDebounced] = useState(value);\n  useEffect(() => {\n    const id = setTimeout(() => setDebounced(value), delay);\n    return () => clearTimeout(id);\n  }, [value, delay]);\n  return debounced;\n}\n",
+      "createdAt": "2024-08-02T08:30:00.000Z",
+      "author": {
+        "login": "AlexeyKiselyov",
+        "avatarUrl": "/public/images/avatar/avatar_logo.jpg",
+        "profileUrl": "https://github.com/AlexeyKiselyov"
+      },
+      "description": "Tiny, reusable hook I use across apps."
+    },
+    "create-short-link": {
+      "title": "createShortLink Express handler",
+      "language": "javascript",
+      "code": "// create short link and save in db\nconst createShortLink = async (req, res) => {\n  const { url } = req.body;\n  if (!url) {\n    return res.status(400).json({ error: 'Missing \"url\" parameter' });\n  }\n\n  if (!urlCheck(url)) {\n    return res.status(400).json({ error: 'Invalid URL format' });\n  }\n\n  const shortUrl = generateShortUrl(url);\n\n  const urlsList = await fs.readFile(dbDir, 'utf8');\n  const urlsObj = JSON.parse(urlsList);\n  urlsObj[shortUrl] = url;\n\n  await fs.writeFile(dbDir, JSON.stringify(urlsObj, null, 2), 'utf8');\n\n  res.json({ shortUrl: `${BASE_URL}/${shortUrl}` });\n};\n",
+      "createdAt": "2023-04-19T10:00:00.000Z",
+      "author": {
+        "login": "AlexeyKiselyov",
+        "avatarUrl": "/public/images/avatar/avatar_logo.jpg",
+        "profileUrl": "https://github.com/AlexeyKiselyov"
+      },
+      "description": "Express handler for a file-backed URL shortener with basic validation."
+    },
+    "post-order": {
+      "title": "postOrder submit helper",
+      "language": "javascript",
+      "code": "//postOrder submit helper\nexport default function postOrder(newOrder, setIsLoading, resetForm, dispatch) {\n  setIsLoading(true);\n  axios\n    .post(`/order`, newOrder)\n    .then(result => {\n      if (result.data) {\n        messageAddOrder(result.data.name);\n        dispatch(clearCart());\n        resetForm();\n      }\n    })\n    .catch(error => {\n      messageError(error.response.data.message);\n    })\n    .finally(() => {\n      setIsLoading(false);\n    });\n}\n",
+      "createdAt": "2023-02-19T10:20:00.000Z",
+      "author": {
+        "login": "AlexeyKiselyov",
+        "avatarUrl": "/public/images/avatar/avatar_logo.jpg",
+        "profileUrl": "https://github.com/AlexeyKiselyov"
+      },
+      "description": "Axios POST helper: toggles loading, handles success/error, clears cart and resets form."
+    }
+  },
+  "projects": [
+    {
+      "title": "_portfotlio",
+      "description": "A portfolio website that contains information about me.",
+      "img": "/images/projects/portfolio.png",
+      "tech": ["React", "TypeScript", "Tailwindcss"],
+      "url": "https://github.com/AlexeyKiselyov",
+      "github_link": "https://github.com/AlexeyKiselyov"
+    },
+    {
+      "title": "_food-shop",
+      "description": "An online store whose purpose is to sell food.",
+      "img": "/images/projects/food-shop.png",
+      "tech": ["React", "NodeJS", "Redux"],
+      "url": "https://food-shop-five.vercel.app",
+      "github_link": "https://github.com/AlexeyKiselyov/food-shop"
+    },
+    {
+      "title": "_petly",
+      "description": "App for pet lovers where they can buy and sell their pets.",
+      "img": "/images/projects/petly.png",
+      "tech": ["React", "NodeJS", "Redux"],
+      "url": "https://petly-six.vercel.app",
+      "github_link": "https://github.com/AlexeyKiselyov/petly-frontend"
+    },
+    {
+      "title": "_movie-scope",
+      "description": "Your guide to movies, casts, and reviews.",
+      "img": "/images/projects/moviescope.png",
+      "tech": ["React", "TypeScript"],
+      "url": "https://movie-scope-liard.vercel.app",
+      "github_link": "https://github.com/AlexeyKiselyov/MovieScope"
+    },
+    {
+      "title": "_telegram-bot",
+      "description": "TG bot that provides currency rates and weather forecast.",
+      "img": "/images/projects/telegram_bot.png",
+      "tech": ["NodeJS"],
+      "url": "https://t.me/Quick_Notes_Sender_Bot",
+      "github_link": "https://github.com/AlexeyKiselyov/forecast-exchange-tg-bot"
+    },
+    {
+      "title": "_shortlinker",
+      "description": "Robust serverless URL shortener built on AWS.",
+      "img": "/images/projects/shortlinker.png",
+      "tech": ["NodeJS", "TypeScript"],
+      "url": "https://github.com/AlexeyKiselyov/shortlinker-aws",
+      "github_link": "https://github.com/AlexeyKiselyov/shortlinker-aws"
+    },
+    {
+      "title": "_landing-dating",
+      "description": "An example of a landing page without business logic.",
+      "img": "/images/projects/landing1.png",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://my-landings-examples.vercel.app/Landing_1/index.html",
+      "github_link": "https://github.com/AlexeyKiselyov/My-Landings-Examples/tree/main/Landing_1"
+    },
+    {
+      "title": "_landing-dating",
+      "description": "An example of a landing page without business logic.",
+      "img": "/images/projects/landing2.png",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://my-landings-examples.vercel.app/Landing_2/index.html",
+      "github_link": "https://github.com/AlexeyKiselyov/My-Landings-Examples/tree/main/Landing_2"
+    },
+    {
+      "title": "_landing-dating",
+      "description": "An example of a landing page without business logic.",
+      "img": "/images/projects/landing3.png",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://my-landings-examples.vercel.app/Landing_3/index.html",
+      "github_link": "https://github.com/AlexeyKiselyov/My-Landings-Examples/tree/main/Landing_3"
+    }
+  ]
+}

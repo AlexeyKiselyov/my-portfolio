@@ -1,0 +1,252 @@
+.hello {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  flex: 1 1 auto;
+  padding-left: 275px;
+  overflow: hidden;
+}
+
+.hero {
+  margin: 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: 20;
+}
+
+.head span {
+  font-size: 18px;
+  line-height: 1;
+  color: #e5e9f0;
+  font-family: var(--font-fira_retina);
+}
+
+.headTitle {
+  font-size: 58px;
+  line-height: 1;
+  color: #e5e9f0;
+  font-family: var(--font-fira_regular);
+  padding-top: 1rem; /* 16px */
+  padding-bottom: 1rem; /* 16px */
+}
+
+.head {
+  padding-bottom: 3rem;
+}
+
+.head .headText,
+.head .diple {
+  font-size: 32px;
+  line-height: 1;
+  color: #4d5bce;
+  font-family: var(--font-fira_retina);
+}
+
+.info {
+  padding-block: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info > span {
+  font-size: 14px;
+  line-height: 1;
+  color: #8da9c6;
+  font-family: var(--font-fira_retina);
+  padding-bottom: 1rem; /* 16px */
+}
+
+.code {
+  font-family: var(--font-fira_medium);
+  color: #e5e9f0;
+}
+
+.identifier {
+  color: #6172ff;
+}
+
+.variableName {
+  color: #43d9ad;
+}
+
+.operator {
+  color: white;
+}
+
+.code .string {
+  color: #e99287;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
+.info .action {
+  display: flex;
+}
+
+.cssBlurryGradientBlue {
+  position: fixed;
+  bottom: 25%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 0% 50% 50%;
+  rotate: 10deg;
+  filter: blur(70px);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(77, 91, 206, 1),
+    rgba(76, 0, 255, 0)
+  );
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.cssBlurryGradientGreen {
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 50% 0% 50%;
+  filter: blur(70px);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(67, 217, 173, 1),
+    rgba(76, 0, 255, 0)
+  );
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.info {
+  font-size: 14px;
+}
+
+/* Typewrite Animation */
+
+.line1 {
+  width: fit-content;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 2px;
+}
+
+.animTypewriter {
+  animation: typewriter 3.5s steps(40) 1s 1 normal both,
+    blinkTextCursor 800ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .hello {
+    padding-left: 0;
+  }
+
+  .hello .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.75rem; /* 28px */
+  }
+  .head {
+    padding-top: 4rem; /* 40px */
+  }
+
+  .hello .head h2,
+  .hello .head .diple {
+    font-size: 20px;
+    color: #43d9ad;
+  }
+
+  .info .action {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hello {
+    padding-left: 0;
+  }
+  .hello .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.75rem; /* 28px */
+  }
+  .head {
+    padding-top: 4rem; /* 40px */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+  .hello {
+    padding-left: 10dvw;
+  }
+}
+
+/* LG */
+
+@media (min-width: 1024px) {
+  .cssBlurryGradientBlue {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 500px;
+    height: 500px;
+    opacity: 0.7;
+    border-radius: 100% 50% 100% 0%;
+  }
+
+  .cssBlurryGradientGreen {
+    position: fixed;
+    top: 10%;
+    right: 35%;
+    filter: blur(100px);
+    rotate: 10deg;
+    width: 400px;
+    height: 400px;
+    opacity: 0.5;
+    border-radius: 100% 0% 0% 0%;
+    rotate: 20deg;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hello {
+    padding-left: 310px;
+  }
+  .hello .head h1 {
+    font-size: 62px;
+  }
+}

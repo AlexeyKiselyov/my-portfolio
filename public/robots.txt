@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: oleksii-kyselov.dev
+Sitemap: https://oleksii-kyselov.dev/sitemap.xml

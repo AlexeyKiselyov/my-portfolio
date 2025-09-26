@@ -1,0 +1,26 @@
+.notFoundWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.code {
+  font-size: clamp(4rem, 18vw, 10rem);
+  line-height: 1;
+  font-weight: 700;
+  color: transparent;
+  background: var(--color-gradient-main);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.message {
+  font-size: 1.25rem;
+  max-width: 580px;
+  opacity: 0.85;
+  color: var(--color-white);
+}

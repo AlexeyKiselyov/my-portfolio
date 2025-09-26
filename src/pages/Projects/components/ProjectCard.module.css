@@ -1,0 +1,44 @@
+.project {
+  min-width: 400px;
+  margin-bottom: 5px;
+}
+
+.projectCard {
+  border: 1px solid #1e2d3d;
+  background-color: #011221;
+  border-radius: 15px;
+}
+
+.window {
+  position: relative;
+  overflow: hidden;
+  /* aspect-ratio: 276/155; */
+  aspect-ratio: 44/23;
+}
+
+.showcase {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .project {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    width: 100%;
+    min-width: 100%;
+    padding-inline: 5px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .project {
+    width: 100%;
+    min-width: 100%;
+    padding-inline: 20px;
+  }
+}

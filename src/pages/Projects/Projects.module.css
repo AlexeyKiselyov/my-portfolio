@@ -1,0 +1,109 @@
+.filters {
+  padding: 10px 25px 40px;
+}
+
+.tab {
+  padding: 25px 25px 5px;
+  flex-wrap: wrap;
+}
+
+.techIcon {
+  opacity: 0.4;
+}
+
+.techIconActive {
+  opacity: 1;
+}
+
+.titleTechActive {
+  color: white;
+}
+
+.viewButton {
+  background-color: #1c2b3a;
+}
+
+.viewButton:hover {
+  background-color: #263b50;
+}
+
+.tabHeight {
+  min-height: 35px;
+  max-height: 35px;
+}
+
+.checkbox {
+  appearance: none;
+  background-color: transparent;
+  width: 1.1em;
+  height: 1.1em;
+  border: 2px solid currentColor;
+  border-radius: 0.15em;
+  margin-top: 1px;
+}
+
+.checkboxChecked {
+  background-color: currentColor;
+  background-image: url("data:image/svg+xml;utf8,<svg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.38587 7.2802L11.9718 0.693573L12.9856 1.70668L5.38587 9.30641L0.826172 4.74671L1.83928 3.73361L5.38587 7.2802Z' fill='white'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkboxChecked:hover {
+  box-shadow: #607b968b 0px 0px 0px 2px;
+}
+
+.checkbox:not(:checked) {
+  border-color: currentColor;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+  background-color: currentColor;
+  background-image: url("data:image/svg+xml;utf8,<svg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.38587 7.2802L11.9718 0.693573L12.9856 1.70668L5.38587 9.30641L0.826172 4.74671L1.83928 3.73361L5.38587 7.2802Z' fill='white'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: #607b968b 0px 0px 0px 2px;
+}
+
+.checkbox:hover:not(:checked) {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: none;
+  box-shadow: #607b968b 0px 0px 0px 2px;
+}
+
+.checkbox:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .projectsCase {
+    padding: 0px 25px 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .projectsCase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 50px 50px 60px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .projectsCase {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 50px 80px 60px;
+    /* padding: 100px 100px 40px; */
+  }
+}
+
+@keyframes animateToBottom {
+  from {
+    transform: translate3d(0, -200px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 10px, 0);
+  }
+}

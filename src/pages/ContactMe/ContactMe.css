@@ -1,0 +1,56 @@
+.arrow {
+  transition: 0.1s;
+  margin-right: 10px;
+  width: 9px;
+  height: 9px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu .title h3 {
+  font-family: 'Fira Code Retina', monospace;
+  color: white;
+  font-size: 16px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 4px 25px;
+}
+
+.link img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+#links {
+  padding: 10px 0px;
+}
+
+.form-content-inner {
+  padding: 75px 25px 40px 25px;
+  padding-right: 2rem;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .submenu .title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #1e2d3d;
+    padding: 0px 25px;
+    height: 35px;
+    padding: 0px 25px;
+  }
+  .submenu .title:hover {
+    cursor: pointer;
+  }
+  .submenu .title h3 {
+    font-size: 14px;
+  }
+}

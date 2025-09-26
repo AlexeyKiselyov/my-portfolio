@@ -1,0 +1,163 @@
+/* AboutMe.module.css */
+.sections {
+  width: 5rem; /* 80px */
+  height: 100%;
+  display: none;
+  border-right: 1px solid #1e2d3d;
+}
+
+/* LG */
+@media (min-width: 1024px) {
+  .sections {
+    display: block;
+  }
+}
+
+.sectionIcon {
+  margin: 1.5rem auto;
+  opacity: 0.4;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionIcon.active,
+.sectionIcon:hover {
+  opacity: 1;
+}
+
+.tabHeight {
+  min-height: 35px;
+  max-height: 35px;
+}
+
+.scrollBar {
+  width: 20px;
+}
+
+.scroll {
+  width: 14px;
+  height: 7px;
+  background-color: #607b96;
+}
+
+.arrow {
+  transition: transform 0.1s;
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.active {
+  color: white;
+}
+
+.right,
+.left {
+  height: 100%;
+  overflow: hidden;
+}
+
+.gistsContent {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .gistsContent {
+    height: 100%;
+    padding: 0px 25px;
+    overflow: hidden;
+  }
+
+  .page {
+    min-height: stretch;
+  }
+}
+
+.sectionArrow {
+  transition: transform 0.1s;
+}
+
+.sectionContent .contacts {
+  padding: 0px 25px;
+}
+
+/* Gist Snippet */
+
+.snippetContainer {
+  background-color: #011221;
+  /* padding: 1.5em 0 1.5em 1.5em; */
+  border-radius: 15px;
+  border: 1px solid #1e2d3d;
+  font-size: 12px;
+  color: #85a9ce;
+  overflow: hidden;
+}
+
+.snippetContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.commentContainer {
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out,
+    margin-top 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+  opacity: 1;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.commentContainer.commentHidden {
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Animated files list under a folder */
+
+.filesContainer {
+  transition: opacity 0.25s ease-in-out, max-height 0.25s ease-in-out,
+    margin-top 0.25s ease-in-out, padding-top 0.25s ease-in-out;
+  opacity: 1;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.filesHidden {
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+/* ====================== */
+
+/* Global link styling for parsed certificate links */
+:global(.text-link) {
+  color: #43d9ad; /* accent */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, opacity 0.15s ease;
+  cursor: pointer;
+}
+
+:global(.text-link:hover) {
+  opacity: 0.9;
+}
+
+:global(.text-link:focus-visible) {
+  outline: 2px dashed #43d9ad;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Small arrow indicator to hint it's clickable */
+:global(.text-link)::after {
+  content: '↗';
+  font-size: 0.8em;
+  margin-left: 0.25em;
+  vertical-align: baseline;
+}
