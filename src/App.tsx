@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import useGlobalSmoothScroll from './hooks/useGlobalSmoothScroll';
@@ -10,11 +10,13 @@ import MobileMenu from './components/MobileMenu/MobileMenu';
 import PageLoader from './components/PageLoader/PageLoader';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
-const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
-const AboutMePage = lazy(() => import('./pages/AboutMe/AboutMePage'));
-const Projects = lazy(() => import('./pages/Projects/Projects'));
-const ContactMe = lazy(() => import('./pages/ContactMe/ContactMe'));
-const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
+import { lazyWithRetry } from './utils/lazyWithRetry';
+
+const HomePage = lazyWithRetry(() => import('./pages/HomePage/HomePage'));
+const AboutMePage = lazyWithRetry(() => import('./pages/AboutMe/AboutMePage'));
+const Projects = lazyWithRetry(() => import('./pages/Projects/Projects'));
+const ContactMe = lazyWithRetry(() => import('./pages/ContactMe/ContactMe'));
+const NotFound = lazyWithRetry(() => import('./pages/NotFound/NotFound'));
 
 const App: React.FC = () => {
   const isSmall = useMedia('(max-width: 1024px)');
