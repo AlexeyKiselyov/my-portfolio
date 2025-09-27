@@ -16,7 +16,10 @@ export function lazyWithRetry<T extends ComponentType<any>>(
   const load = () =>
     importer().catch((err: any) => {
       const message: string = err?.message || '';
-      const isChunkError = /Failed to fetch dynamically imported module|Loading chunk|import\(|ChunkLoadError/i.test(message);
+      const isChunkError =
+        /Failed to fetch dynamically imported module|Loading chunk|import\(|ChunkLoadError/i.test(
+          message
+        );
 
       if (isChunkError && attempts < retryTimes) {
         attempts += 1;
