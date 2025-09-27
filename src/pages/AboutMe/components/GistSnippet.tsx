@@ -87,7 +87,7 @@ const GistSnippet: React.FC<GistSnippetProps> = ({ snippet }) => {
           )}
           style={{ maxHeight: 240 }}
         >
-          {(
+          {
             <SyntaxHighlighter
               language={
                 ['javascript', 'js'].includes(
@@ -116,7 +116,7 @@ const GistSnippet: React.FC<GistSnippetProps> = ({ snippet }) => {
             >
               {snippet.code || ''}
             </SyntaxHighlighter>
-          )}
+          }
         </SimpleBar>
       </div>
 
