@@ -163,7 +163,7 @@
   },
   "projects": [
     {
-      "title": "_portfotlio",
+      "title": "_portfolio",
       "description": "A portfolio website that contains information about me.",
       "img": "/images/projects/portfolio.png",
       "tech": ["React", "TypeScript", "Tailwindcss"],
