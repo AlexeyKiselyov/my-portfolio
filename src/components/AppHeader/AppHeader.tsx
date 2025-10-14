@@ -27,10 +27,12 @@ const AppHeader: React.FC = () => {
         <div className="flex">
           <NavLink id="nav-logo" className={styles.navLogo} to="/">
             <img
-              className="rounded-[50%] mr-3 w-8"
+              className="rounded-[50%] mr-3 w-8 h-8 object-cover"
+              alt="User avatar"
               src="/images/avatar/avatar_logo.jpg"
-              alt="avatar"
-              width="24px"
+              width="32"
+              height="32"
+              loading="lazy"
             />
             {config.logo_name}
           </NavLink>
