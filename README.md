@@ -23,6 +23,7 @@ terminal design with dark theme, smooth animations, and responsive interface.
   Twitter tags, structured data (JSON‑LD), robots.txt and sitemap.xml with
   auto‑updated `lastmod` for better search engine visibility
 - **Fast Loading**: Optimized images and code with lazy loading for pages
+- **Analytics**: Google Analytics 4 integration with custom event tracking
 
 ## 🛠 Technologies
 
@@ -51,13 +52,28 @@ terminal design with dark theme, smooth animations, and responsive interface.
    npm install
    ```
 
-3. Run the dev server:
+3. Configure environment variables:
+
+   Copy `.env.example` to `.env` and fill in the values:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Required variables:
+
+   - `VITE_GA_MEASUREMENT_ID` - Google Analytics 4 Measurement ID (see
+     [Analytics Setup](docs/ANALYTICS.md))
+   - `VITE_TELEGRAM_ENDPOINT` - Telegram relay endpoint URL
+   - `VITE_CONTACT_EMAIL` - Fallback email
+
+4. Run the dev server:
 
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+5. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🏗 Build
 

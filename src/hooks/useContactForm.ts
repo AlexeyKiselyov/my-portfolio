@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { TELEGRAM_ENDPOINT } from '../constants';
 import { validateName, validateEmail, validateMessage } from '../utils';
+import analytics from '../utils/analytics';
 
 interface UseContactFormProps {
   name: string;
@@ -69,6 +70,7 @@ export const useContactForm = ({
   // Send message via Telegram or fallback to mailto
   const sendMessage = async () => {
     setStatus('sending');
+    analytics.contact.formStart();
     try {
       const resp = await fetch(TELEGRAM_ENDPOINT, {
         method: 'POST',
@@ -87,6 +89,7 @@ export const useContactForm = ({
       onEmailChange('');
       onMessageChange('');
       setStatus('success');
+      analytics.contact.formSubmit(true);
       setTimeout(() => setStatus('idle'), 2500);
     } catch (e) {
       // fallback to mailto
@@ -99,6 +102,7 @@ export const useContactForm = ({
         'aleshakiselev123@gmail.com';
       window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
       setStatus('error');
+      analytics.contact.formError('telegram_failed');
     }
   };
 

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
 
 import GithubCorner from '../GithubCorner/GithubCorner';
+import analytics from '../../utils/analytics';
 
 import type { DeveloperConfig } from '../../types/developer';
 
@@ -43,6 +44,7 @@ const AppHeader: React.FC = () => {
               clsx(styles.navLink, { [styles.active]: isActive })
             }
             to="/"
+            onClick={() => analytics.navigation.menuItemClick('hello')}
           >
             _hello
           </NavLink>
@@ -53,6 +55,7 @@ const AppHeader: React.FC = () => {
               clsx(styles.navLink, { [styles.active]: isActive })
             }
             to="/about-me"
+            onClick={() => analytics.navigation.menuItemClick('about-me')}
           >
             _about-me
           </NavLink>
@@ -63,6 +66,7 @@ const AppHeader: React.FC = () => {
               clsx(styles.navLink, { [styles.active]: isActive })
             }
             to="/projects"
+            onClick={() => analytics.navigation.menuItemClick('projects')}
           >
             _projects
           </NavLink>
@@ -74,6 +78,7 @@ const AppHeader: React.FC = () => {
             clsx(styles.navLinkContact, { [styles.active]: isActive })
           }
           to="/contact-me"
+          onClick={() => analytics.navigation.menuItemClick('contact-me')}
         >
           _contact-me
         </NavLink>

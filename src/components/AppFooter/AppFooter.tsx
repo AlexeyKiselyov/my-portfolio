@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import styles from './AppFooter.module.css';
 
 import config from '../../developer.json';
+import analytics from '../../utils/analytics';
 
 const AppFooter: React.FC = () => {
   const social = config.contacts.social;
@@ -33,6 +34,7 @@ const AppFooter: React.FC = () => {
             href={linkedinLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => analytics.social.linkClick('linkedin')}
             className={clsx(
               'flex justify-center items-center',
               styles.socialIcon
@@ -44,6 +46,7 @@ const AppFooter: React.FC = () => {
             href={telegramLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => analytics.social.linkClick('telegram')}
             className={clsx(
               'flex justify-center items-center',
               styles.socialIcon
@@ -55,6 +58,7 @@ const AppFooter: React.FC = () => {
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => analytics.social.linkClick('github')}
             className={clsx(
               'flex md:hidden justify-center items-center',
               styles.socialIcon
@@ -70,6 +74,7 @@ const AppFooter: React.FC = () => {
         href={githubLink}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => analytics.social.linkClick('github')}
         className="hidden md:inline-flex items-center px-5 border-left"
       >
         @{githubUser}

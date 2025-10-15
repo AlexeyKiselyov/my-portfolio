@@ -9,6 +9,7 @@ import AppFooter from './components/AppFooter/AppFooter';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import PageLoader from './components/PageLoader/PageLoader';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import Analytics from './components/Analytics';
 
 import { lazyWithRetry } from './utils/lazyWithRetry';
 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
+      <Analytics />
       <MobileMenu />
       <AppHeader />
 

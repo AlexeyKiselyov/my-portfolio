@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { CanvasHandle } from '../components/CanvasGameScreen';
+import analytics from '../../../utils/analytics';
 
 export interface Position {
   x: number;
@@ -235,6 +236,7 @@ export const useSnakeGame = (
             gameIntervalRef.current = null;
           }
           setGameOver(true);
+          analytics.game.gameOver(newScore);
           sfxWin();
           setGameStarted(false);
         } else {
@@ -251,6 +253,7 @@ export const useSnakeGame = (
       }
       setGameStarted(false);
       setGameOver(true);
+      analytics.game.gameOver(state.score);
       sfxGameOver();
     }
     directionChangedThisTickRef.current = false;
@@ -258,6 +261,7 @@ export const useSnakeGame = (
 
   const startGame = useCallback(() => {
     ensureAudioCtx();
+    analytics.game.start();
     setGameStarted(true);
     if (gameIntervalRef.current) clearInterval(gameIntervalRef.current);
     gameIntervalRef.current = setInterval(moveSnake, tickInterval);
