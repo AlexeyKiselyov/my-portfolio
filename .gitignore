@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+info
 *.local
 
 .env
@@ -27,3 +28,4 @@ dist-ssr
 
 # Local Copilot config (ignore)
 /.github/copilot-instructions.md
+
