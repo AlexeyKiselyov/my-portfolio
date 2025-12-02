@@ -1,8 +1,9 @@
 export const BASE_SEO_DATA = {
-  title: 'Oleksii Kyselov - Full-stack Developer Portfolio',
+  title: 'Oleksii Kyselov - Frontend & Full-stack Developer Portfolio',
   description:
-    'Portfolio of Oleksii Kyselov, a full-stack developer with 3+ years experience. View my projects, skills, and contact information.',
-  keywords: 'full-stack developer, React, Node.js, portfolio, web development',
+    'Portfolio of Oleksii Kyselov, a Frontend & Full-stack developer specializing in React, TypeScript, and Node.js. View my projects, skills, and contact information.',
+  keywords:
+    'frontend developer, full-stack developer, React Developer, TypeScript, JavaScript, Node.js, Tailwind CSS, Web Development, UI/UX, Portfolio',
   author: 'Oleksii Kyselov',
   viewport: 'width=device-width, initial-scale=1.0',
   charset: 'UTF-8',
@@ -12,7 +13,7 @@ export const STRUCTURED_DATA = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Oleksii Kyselov',
-  jobTitle: 'Full-stack Developer',
+  jobTitle: 'Frontend & Full-stack Developer',
   url: 'https://oleksii-kyselov.dev',
   sameAs: [
     'https://github.com/oleksiikyselov',
@@ -20,18 +21,21 @@ export const STRUCTURED_DATA = {
     'https://t.me/oleksiikyselov',
   ],
   knowsAbout: [
+    'Frontend Development',
     'JavaScript',
     'TypeScript',
     'React',
+    'Redux',
+    'Tailwind CSS',
     'Node.js',
     'MongoDB',
-    'HTML',
-    'CSS',
+    'HTML5',
+    'CSS3',
     'Web Development',
   ],
   hasOccupation: {
     '@type': 'Occupation',
-    name: 'Full-stack Developer',
+    name: 'Frontend & Full-stack Developer',
     occupationLocation: {
       '@type': 'Country',
       name: 'Ukraine',
@@ -41,12 +45,12 @@ export const STRUCTURED_DATA = {
 
 export const PAGE_SEO_DATA = {
   home: {
-    title: 'Home | Oleksii Kyselov - Full-stack Developer',
+    title: 'Home | Oleksii Kyselov - Frontend & Full-stack Developer',
     description:
-      "Welcome to Oleksii Kyselov's portfolio. Discover my projects, skills, and experience as a full-stack developer with 3+ years in web development.",
+      "Welcome to Oleksii Kyselov's portfolio. Explore my expertise in Frontend (React, TS) and Full-stack development.",
   },
   about: {
-    title: 'About Me | Oleksii Kyselov - Full-stack Developer',
+    title: 'About Me | Oleksii Kyselov - Frontend & Full-stack Developer',
     description:
       'Learn more about Oleksii Kyselov, a full-stack developer with experience in React, Node.js, and web development. View my professional background, skills, and personal info.',
   },
