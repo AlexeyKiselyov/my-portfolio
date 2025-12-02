@@ -166,7 +166,7 @@
       "title": "_portfolio",
       "description": "A portfolio website that contains information about me.",
       "img": "/images/projects/portfolio.png",
-      "tech": ["React", "TypeScript", "Tailwindcss"],
+      "tech": ["React", "TypeScript", "Tailwindcss", "Vitest", "Cypres"],
       "url": "https://oleksii-kyselov.dev",
       "github_link": "https://github.com/AlexeyKiselyov/my-portfolio"
     },

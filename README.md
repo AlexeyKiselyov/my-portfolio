@@ -62,8 +62,7 @@ terminal design with dark theme, smooth animations, and responsive interface.
 
    Required variables:
 
-   - `VITE_GA_MEASUREMENT_ID` - Google Analytics 4 Measurement ID (see
-     [Analytics Setup](docs/ANALYTICS.md))
+   - `VITE_GA_MEASUREMENT_ID` - Google Analytics 4 Measurement ID
    - `VITE_TELEGRAM_ENDPOINT` - Telegram relay endpoint URL
    - `VITE_CONTACT_EMAIL` - Fallback email
 

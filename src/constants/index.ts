@@ -9,6 +9,8 @@ export const TECHS = [
   'NodeJS',
   'Tailwindcss',
   'Redux',
+  'Vitest',
+  'Cypres',
 ];
 
 export const TECH_ICON_FILES: Record<string, string> = {
@@ -20,6 +22,8 @@ export const TECH_ICON_FILES: Record<string, string> = {
   NodeJS: 'nodeJS.svg',
   Tailwindcss: 'tailwindcss.svg',
   Redux: 'redux.svg',
+  Vitest: 'vitest.svg',
+  Cypres: 'сypres.svg',
 };
 
 export const TELEGRAM_ENDPOINT = import.meta.env
