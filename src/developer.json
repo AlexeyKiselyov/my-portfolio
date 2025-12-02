@@ -17,7 +17,7 @@
           },
           "hard-skills": {
             "title": "hard-skills",
-            "description": "<br>· Core stack: <br>HTML, CSS, SASS, JavaScript, TypeScript, React, Redux, Node.js, MongoDB, SQL, Git, REST API. Foundational knowledge of AWS, Linux, Docker, Jenkins, Jest, Cypress.<br><br>· Front‑end: <br>Responsive/adaptive layouts, accessibility basics, cross‑browser compatibility, animations and sliders (custom and library‑based), performance profiling and optimization.<br><br>· Back‑end: <br>Node.js/Express, RESTful APIs, MongoDB (Mongoose), basic SQL.<br><br>· Tooling & DevOps: <br>Git and CI/CD, Docker, basics of AWS, Linux CLI, WordPress deployments, hosting/monitoring.<br><br>· Other: <br>MERN applications, Telegram bot integrations, e‑commerce setups on WordPress."
+            "description": "<br>· Core stack: <br>HTML, CSS, SASS, JavaScript, TypeScript, React, Redux, Node.js, MongoDB, SQL, Git, REST API. Foundational knowledge of AWS, Linux, Docker, Jenkins, Jest, Vitest, Cypress.<br><br>· Front‑end: <br>Responsive/adaptive layouts, accessibility basics, cross‑browser compatibility, animations and sliders (custom and library‑based), performance profiling and optimization.<br><br>· Back‑end: <br>Node.js/Express, RESTful APIs, MongoDB (Mongoose), basic SQL.<br><br>· Tooling & DevOps: <br>Git and CI/CD, Docker, basics of AWS, Linux CLI, WordPress deployments, hosting/monitoring.<br><br>· Other: <br>MERN applications, Telegram bot integrations, e‑commerce setups on WordPress."
           },
           "soft-skills": {
             "title": "soft-skills",
