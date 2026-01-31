@@ -41,10 +41,46 @@ export const parseTextToReact = (htmlString: string): React.ReactNode => {
     }
     if (lastIdx < text.length) nodes.push(text.slice(lastIdx));
 
+    // 2) Parse **bold** text
+    const nodesWithBold: React.ReactNode[] = [];
+    const boldRe = /\*\*([^*]+)\*\*/g;
+
+    nodes.forEach((node, nodeIdx) => {
+      if (typeof node !== 'string') {
+        nodesWithBold.push(node);
+        return;
+      }
+
+      let lastBoldIdx = 0;
+      let boldMatch: RegExpExecArray | null;
+
+      while ((boldMatch = boldRe.exec(node)) !== null) {
+        const [full, content] = boldMatch;
+        const start = boldMatch.index;
+        if (start > lastBoldIdx) {
+          nodesWithBold.push(node.slice(lastBoldIdx, start));
+        }
+        nodesWithBold.push(
+          React.createElement(
+            'strong',
+            {
+              key: `${baseKey}-bold-${nodeIdx}-${start}`,
+              className: 'text-purple-text font-bold',
+            },
+            content
+          )
+        );
+        lastBoldIdx = start + full.length;
+      }
+      if (lastBoldIdx < node.length) {
+        nodesWithBold.push(node.slice(lastBoldIdx));
+      }
+    });
+
     // Then, auto-link any remaining raw URLs in string fragments
     const urlRe = /(https?:\/\/[^\s<]+)/g;
     const autoLinked: React.ReactNode[] = [];
-    nodes.forEach((n, idx) => {
+    nodesWithBold.forEach((n, idx) => {
       if (typeof n !== 'string') {
         autoLinked.push(n);
         return;
