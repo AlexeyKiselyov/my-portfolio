@@ -10,22 +10,159 @@
         "info": {
           "experience": {
             "title": "experience",
-            "description": "<br>\u2003**Frontend/Full-Stack Developer with 2+ years of commercial experience and a strong 15-year engineering background in high-reliability/critical systems with strong business process understanding**. Skilled in JavaScript, TypeScript, React, modern CSS, and frontend tooling. Experienced in distributed teams, collaborating with backend developers, designers, and PMs. Actively improving skills in automated testing.<br><br>\u2003**WORK EXPERIENCE ⬇️**<br><br>**· FULL-STACK DEVELOPER** | (React, Node.js, Express, SQL, MUI)<br>\u2003**AnyCnat.one** | April 2025 - November 2025 | Ukraine<br>- Fixed UI issues and improved interface responsiveness.<br>- Improved a customer-facing filtering interface.<br>- Expanded filtering options and enhanced overall UX.<br>- Developed backend controllers, database schemas, and API endpoints.<br>- Refactored backend routes and aligned frontend behavior with updated APIs.<br><br>**· FRONTEND DEVELOPER** | (HTML, CSS, JS, Animations, JS UI Libraries)<br>\u2003**NDA** | February 2024 - March 2025 | Ukraine<br>- Developed responsive user interfaces using HTML, CSS, Sass, and JavaScript.<br>- Built interactive UI components and improved cross-browser stability.<br>- Worked with designers and backend developers in a distributed team.<br>- Ensured performance optimization and layout consistency.<br><br>**· FULL-STACK / FRONTEND DEVELOPER**<br>\u2003**Freelance** | 2023 | Ukraine<br>- Fixed bugs and resolved technical issues to improve stability and performance.<br>- Added multi-language support across the platform.<br>- Development of web applications using MERN stack.<br>- Creating landing pages.<br><br>**· ЕNGINEER**<br>\u2003**Ukrainian Railways** | August 2009 - February 2024 | Ukraine<br>- Worked with digital communication systems and fiber-optic equipment.<br><br>**· COMPANY OWNER**<br>\u2003**L&V Company** | October 2009 - February 2015 | Ukraine<br>- Sale and installation metal-plastic structures.",
+            "description": {
+              "intro": "<br>\u2003**Frontend/Full-Stack Developer with 2+ years of commercial experience and a strong 15-year engineering background in high-reliability/critical systems with strong business process understanding**. Skilled in JavaScript, TypeScript, React, modern CSS, and frontend tooling. Experienced in distributed teams, collaborating with backend developers, designers, and PMs. Actively improving skills in automated testing.",
+              "jobs": [
+                {
+                  "role": "FULL-STACK DEVELOPER",
+                  "techStack": "(React, Node.js, Express, SQL, MUI)",
+                  "company": "AnyCnat.one",
+                  "period": "April 2025 - November 2025",
+                  "location": "Ukraine",
+                  "description": [
+                    "Fixed UI issues and improved interface responsiveness.",
+                    "Improved a customer-facing filtering interface.",
+                    "Expanded filtering options and enhanced overall UX.",
+                    "Developed backend controllers, database schemas, and API endpoints.",
+                    "Refactored backend routes and aligned frontend behavior with updated APIs."
+                  ]
+                },
+                {
+                  "role": "FRONTEND DEVELOPER",
+                  "techStack": "(HTML, CSS, JS, Animations, JS UI Libraries)",
+                  "company": "NDA",
+                  "period": "February 2024 - March 2025",
+                  "location": "Ukraine",
+                  "description": [
+                    "Developed responsive user interfaces using HTML, CSS, Sass, and JavaScript.",
+                    "Built interactive UI components and improved cross-browser stability.",
+                    "Worked with designers and backend developers in a distributed team.",
+                    "Ensured performance optimization and layout consistency."
+                  ]
+                },
+                {
+                  "role": "FULL-STACK / FRONTEND DEVELOPER",
+                  "company": "Freelance",
+                  "period": "2023",
+                  "location": "Ukraine",
+                  "description": [
+                    "Fixed bugs and resolved technical issues to improve stability and performance.",
+                    "Added multi-language support across the platform.",
+                    "Development of web applications using MERN stack.",
+                    "Creating landing pages."
+                  ]
+                },
+                {
+                  "role": "ЕNGINEER",
+                  "company": "Ukrainian Railways",
+                  "period": "August 2009 - February 2024",
+                  "location": "Ukraine",
+                  "description": [
+                    "Worked with digital communication systems and fiber-optic equipment."
+                  ]
+                },
+                {
+                  "role": "COMPANY OWNER",
+                  "company": "L&V Company",
+                  "period": "October 2009 - February 2015",
+                  "location": "Ukraine",
+                  "description": [
+                    "Sale and installation metal-plastic structures."
+                  ]
+                }
+              ]
+            },
             "files": {
-              "CV": "<br> [View and download my CV](https://drive.google.com/file/d/1ONEIz9DAOgtThotWBu1NTa8hGOtTXIDu/view?usp=sharing)"
+              "CV": {
+                "link": {
+                  "text": "View and download my CV",
+                  "url": "https://drive.google.com/file/d/1ONEIz9DAOgtThotWBu1NTa8hGOtTXIDu/view?usp=sharing"
+                }
+              }
             }
           },
           "hard-skills": {
             "title": "hard-skills",
-            "description": "<br>· **Core stack**: <br>HTML, CSS, SASS, JavaScript, TypeScript, React, Redux, Node.js, MongoDB, SQL, Git, REST API. Foundational knowledge of AWS, Linux, Docker, Jenkins, Jest, Vitest, Cypress.<br><br>· **Front‑end**: <br>Responsive/adaptive layouts, accessibility basics, cross‑browser compatibility, animations and sliders (custom and library‑based), performance profiling and optimization.<br><br>· **Back‑end**: <br>Node.js/Express, RESTful APIs, MongoDB (Mongoose), basic SQL.<br><br>· **Tooling & DevOps**: <br>Git and CI/CD, Docker, basics of AWS, Linux CLI, WordPress deployments, hosting/monitoring.<br><br>· **Other**: <br>MERN applications, Telegram bot integrations, e‑commerce setups on WordPress."
+            "description": {
+              "groups": [
+                {
+                  "title": "Core stack",
+                  "items": [
+                    "HTML",
+                    "CSS",
+                    "SASS",
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "Redux",
+                    "Node.js",
+                    "MongoDB",
+                    "SQL",
+                    "Git",
+                    "REST API",
+                    "Foundational knowledge of AWS, Linux, Docker, Jenkins, Jest, Vitest, Cypress"
+                  ]
+                },
+                {
+                  "title": "Front‑end",
+                  "items": [
+                    "Responsive/adaptive layouts",
+                    "accessibility basics",
+                    "cross‑browser compatibility",
+                    "animations and sliders (custom and library‑based)",
+                    "performance profiling and optimization"
+                  ]
+                },
+                {
+                  "title": "Back‑end",
+                  "items": [
+                    "Node.js/Express",
+                    "RESTful APIs",
+                    "MongoDB (Mongoose)",
+                    "basic SQL"
+                  ]
+                },
+                {
+                  "title": "Tooling & DevOps",
+                  "items": [
+                    "Git and CI/CD",
+                    "Docker",
+                    "basics of AWS",
+                    "Linux CLI",
+                    "WordPress deployments",
+                    "hosting/monitoring"
+                  ]
+                },
+                {
+                  "title": "Other",
+                  "items": [
+                    "MERN applications",
+                    "Telegram bot integrations",
+                    "e‑commerce setups on WordPress"
+                  ]
+                }
+              ]
+            }
           },
           "soft-skills": {
             "title": "soft-skills",
-            "description": "<br>Responsible, quick‑learning, goal‑oriented. <br><br>Clear communication, teamwork, and ownership mindset. <br><br>Strong problem‑solving skills, attention to detail, and the ability to deliver under deadlines."
+            "description": {
+              "paragraphs": [
+                "Responsible, quick‑learning, goal‑oriented.",
+                "Clear communication, teamwork, and ownership mindset.",
+                "Strong problem‑solving skills, attention to detail, and the ability to deliver under deadlines."
+              ]
+            }
           },
           "languages": {
             "title": "languages",
-            "description": "<br>**English**  — Intermediate<br><br>**Ukrainian** — Native<br><br>**Russian** — Native"
+            "description": {
+              "languages": [
+                { "language": "English", "level": "Intermediate" },
+                { "language": "Ukrainian", "level": "Native" },
+                { "language": "Russian", "level": "Native" }
+              ]
+            }
           }
         }
       },
@@ -35,18 +172,110 @@
         "info": {
           "bio": {
             "title": "bio",
-            "description": "<br>About me<br><br>I’m a front‑end developer with a full‑stack mindset, 3+ years in software development and 2+ years of commercial work. I care about clean, maintainable UIs and measurable UX/performance gains, and I’m looking for a full‑time role to make an impact.<br><br>My engineering background at Ukrainian Railways strengthened discipline, system thinking, and reliability in production environments."
+            "description": {
+              "paragraphs": [
+                "About me",
+                "I’m a front‑end developer with a full‑stack mindset, 3+ years in software development and 2+ years of commercial work. I care about clean, maintainable UIs and measurable UX/performance gains, and I’m looking for a full‑time role to make an impact.",
+                "My engineering background at Ukrainian Railways strengthened discipline, system thinking, and reliability in production environments."
+              ]
+            }
           },
           "interests": {
             "title": "interests",
-            "description": "<br>· Continuous learning; <br>· Modern front‑end architectures; <br>· UI animations and micro‑interactions; <br>· Performance tuning; <br>· Automation and scripting; <br>· DevOps basics (Docker/AWS); <br>· MERN side projects; <br>· Telegram bots; <br>· Artificial Intelligence."
+            "description": {
+              "paragraphs": [
+                "· Continuous learning;",
+                "· Modern front‑end architectures;",
+                "· UI animations and micro‑interactions;",
+                "· Performance tuning;",
+                "· Automation and scripting;",
+                "· DevOps basics (Docker/AWS);",
+                "· MERN side projects;",
+                "· Telegram bots;",
+                "· Artificial Intelligence."
+              ]
+            }
           },
           "education": {
             "title": "education",
-            "description": "<br>· IT School GOIT (Kyiv)<br>Jun 2022 – Jan 2023 · Ukraine <br>Full‑Stack Developer <br> [Certificate](https://drive.google.com/file/d/1kpcInKoDLQ6ox-bz_14-KcMMVbrac6Mt/view) <br><br>· Kharkov Academy of Railway Transport<br>Sep 2005 – Jun 2009 · Ukraine <br>Master’s in Automation and Computer‑Integrated Technologies",
+            "description": {
+              "list": [
+                {
+                  "institution": "IT School GOIT (Kyiv)",
+                  "period": "Jun 2022 – Jan 2023",
+                  "location": "Ukraine",
+                  "degree": "Full‑Stack Developer",
+                  "certificateLink": "https://drive.google.com/file/d/1kpcInKoDLQ6ox-bz_14-KcMMVbrac6Mt/view"
+                },
+                {
+                  "institution": "Kharkov Academy of Railway Transport",
+                  "period": "Sep 2005 – Jun 2009",
+                  "location": "Ukraine",
+                  "degree": "Master’s in Automation and Computer‑Integrated Technologies"
+                }
+              ]
+            },
             "files": {
-              "additional": "<br>· IT School GOIT (Kyiv)<br>Jun 2022 – Jan 2023 · Ukraine <br>Full‑Stack Developer — [Certificate](https://drive.google.com/file/d/1kpcInKoDLQ6ox-bz_14-KcMMVbrac6Mt/view)<br><br>· FREECODECAMP <br>JavaScript Algorithms and Data Structures — [Certificate](https://drive.google.com/file/d/1m-gFALdXKFECQZEGQkYmIRLrpCtYZ_G3/view?usp=drive_link)<br><br>· CODEFINITY<br>Introduction to SQL — [Certificate](https://codefinity.com/ua/certificate/e940029e-46e3-4261-b0eb-afb293628be8/b3ddb247-eebc-4cd4-a859-0d9c1428d0bf)<br>Intermediate SQL — [Certificate](https://codefinity.com/ua/certificate/e940029e-46e3-4261-b0eb-afb293628be8/9f551543-b1bb-4307-afcd-0d82f5165ff4) <br><br>· CODEWARS — [Profile](https://www.codewars.com/users/AlexeyKiselyov)",
-              "university": "<br>· Kharkov Academy of Railway Transport<br>Sep 2005 – Jun 2009 · Ukraine <br>Master’s in Automation and Computer‑Integrated Technologies"
+              "additional": {
+                "list": [
+                  {
+                    "institution": "IT School GOIT (Kyiv)",
+                    "period": "Jun 2022 – Jan 2023",
+                    "location": "Ukraine",
+                    "degree": "Full‑Stack Developer",
+                    "certificates": [
+                      {
+                        "name": "Certificate",
+                        "url": "https://drive.google.com/file/d/1kpcInKoDLQ6ox-bz_14-KcMMVbrac6Mt/view"
+                      }
+                    ]
+                  },
+                  {
+                    "institution": "FREECODECAMP",
+                    "degree": "JavaScript Algorithms and Data Structures",
+                    "certificates": [
+                      {
+                        "name": "Certificate",
+                        "url": "https://drive.google.com/file/d/1m-gFALdXKFECQZEGQkYmIRLrpCtYZ_G3/view?usp=drive_link"
+                      }
+                    ]
+                  },
+                  {
+                    "institution": "CODEFINITY",
+                    "degree": "Introduction to SQL / Intermediate SQL",
+                    "certificates": [
+                      {
+                        "name": "Introduction to SQL",
+                        "url": "https://codefinity.com/ua/certificate/e940029e-46e3-4261-b0eb-afb293628be8/b3ddb247-eebc-4cd4-a859-0d9c1428d0bf"
+                      },
+                      {
+                        "name": "Intermediate SQL",
+                        "url": "https://codefinity.com/ua/certificate/e940029e-46e3-4261-b0eb-afb293628be8/9f551543-b1bb-4307-afcd-0d82f5165ff4"
+                      }
+                    ]
+                  },
+                  {
+                    "institution": "CODEWARS",
+                    "degree": "Profile",
+                    "certificates": [
+                      {
+                        "name": "Profile",
+                        "url": "https://www.codewars.com/users/AlexeyKiselyov"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "university": {
+                "list": [
+                  {
+                    "institution": "Kharkov Academy of Railway Transport",
+                    "period": "Sep 2005 – Jun 2009",
+                    "location": "Ukraine",
+                    "degree": "Master’s in Automation and Computer‑Integrated Technologies"
+                  }
+                ]
+              }
             }
           }
         }
@@ -57,11 +286,19 @@
         "info": {
           "sports": {
             "title": "sports",
-            "description": "<br>Outside of coding, I enjoy staying active and keeping a healthy lifestyle. I like working out both at outdoor sports grounds and in the gym, where I can challenge myself and build discipline. Cycling is another passion of mine, as it allows me to combine physical activity with exploring new places. I also enjoy taking walks, which helps me recharge and find inspiration for my projects."
+            "description": {
+              "paragraphs": [
+                "Outside of coding, I enjoy staying active and keeping a healthy lifestyle. I like working out both at outdoor sports grounds and in the gym, where I can challenge myself and build discipline. Cycling is another passion of mine, as it allows me to combine physical activity with exploring new places. I also enjoy taking walks, which helps me recharge and find inspiration for my projects."
+              ]
+            }
           },
           "music": {
             "title": "music",
-            "description": "<br>Music has always been an important part of my life. I enjoy playing both the guitar and the piano, which allows me to express creativity in different ways. I also love listening to beautiful and interesting music, as it inspires me, helps me relax, and often sparks new ideas for my work."
+            "description": {
+              "paragraphs": [
+                "Music has always been an important part of my life. I enjoy playing both the guitar and the piano, which allows me to express creativity in different ways. I also love listening to beautiful and interesting music, as it inspires me, helps me relax, and often sparks new ideas for my work."
+              ]
+            }
           }
         }
       }

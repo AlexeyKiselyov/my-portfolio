@@ -1,8 +1,82 @@
 // Unified type definitions for developer.json
+export type JobConfig = {
+  role: string;
+  techStack?: string;
+  company: string;
+  period: string;
+  location: string;
+  description: string[];
+};
+
+export type ExperienceConfig = {
+  intro?: string;
+  jobs: JobConfig[];
+};
+
+export type SkillGroup = {
+  title: string;
+  items: string[];
+};
+
+export type SkillConfig = {
+  title?: string;
+  groups: SkillGroup[];
+};
+
+export type TextConfig = {
+  paragraphs: string[];
+};
+
+export type LanguageItem = {
+  language: string;
+  level: string;
+};
+
+export type LanguageConfig = {
+  languages: LanguageItem[];
+};
+
+export type Certificate = {
+  name: string;
+  url: string;
+};
+
+export type EducationItem = {
+  institution: string;
+  period?: string; // Optional for some certificates
+  location?: string;
+  degree: string;
+  certificates?: Certificate[]; // For specific certificates linked to this item
+  certificateLink?: string; // Quick link for the degree itself
+};
+
+export type EducationConfig = {
+  list: EducationItem[];
+};
+
+export type LinkConfig = {
+  text: string;
+  url: string;
+};
+
+export type FileConfig = {
+  description?: string;
+  link?: LinkConfig;
+};
+
+// Union of all structured types
+export type StructuredContent =
+  | ExperienceConfig
+  | SkillConfig
+  | TextConfig
+  | LanguageConfig
+  | EducationConfig
+  | FileConfig;
+
 export type SectionInfo = {
   title: string;
-  description: string;
-  files?: Record<string, string>;
+  description: string | StructuredContent;
+  files?: Record<string, string | StructuredContent>;
 };
 
 export type Section = {
@@ -62,8 +136,12 @@ export type Snippet = {
   language: string;
   code: string;
   createdAt: string;
-  author: { login: string; avatarUrl: string; profileUrl: string };
-  description?: string;
+  author: {
+    login: string;
+    avatarUrl: string;
+    profileUrl: string;
+  };
+  description: string;
 };
 
 export type DeveloperConfig = {
@@ -72,8 +150,6 @@ export type DeveloperConfig = {
   role: string;
   about: About;
   contacts: Contacts;
-  snippets?: Record<string, Snippet>;
+  snippets: Record<string, Snippet>;
   projects: Project[];
 };
-
-export type Config = DeveloperConfig;
