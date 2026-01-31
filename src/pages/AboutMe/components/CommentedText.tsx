@@ -129,27 +129,34 @@ const CommentedText: React.FC<CommentedTextProps> = ({ text }) => {
         const linkMD = item.certificateLink
           ? ` [Certificate](${item.certificateLink})`
           : '';
-        const header = `<br>· ${item.institution}`;
-        const subHeader = `${item.period} · ${item.location}`;
+        const header = `<br>· **${item.institution}**`;
+
+        const subHeaderParts = [item.period, item.location].filter(Boolean);
+        const subHeader =
+          subHeaderParts.length > 0 ? subHeaderParts.join(' · ') : null;
+
         const subHeader2 = `${item.degree}${linkMD}`;
 
         return (
           <React.Fragment key={index}>
             {parseTextToReact(header)}
-            <br />
-            {parseTextToReact(subHeader)}
+
+            {subHeader && (
+              <>
+                <br />
+                {parseTextToReact(subHeader)}
+              </>
+            )}
+
             <br />
             {parseTextToReact(subHeader2)}
 
             {item.certificates && item.certificates.length > 0 && (
               <>
                 <br />
-                <br />
                 {item.certificates.map((cert, cIndex) => (
                   <React.Fragment key={cIndex}>
-                    {parseTextToReact(
-                      `${cert.name} — [Certificate](${cert.url})`
-                    )}
+                    {parseTextToReact(`[${cert.name}](${cert.url})`)}
                     {cIndex < (item.certificates?.length || 0) - 1 && <br />}
                   </React.Fragment>
                 ))}
